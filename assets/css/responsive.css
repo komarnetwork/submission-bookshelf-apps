@@ -1,0 +1,72 @@
+/* ===================================== */
+/* responsive */
+@media screen and (min-width: 1200px) {
+  .book_shelf .card {
+    width: 90%;
+  }
+  .search_section .card {
+    width: 50%;
+  }
+
+  .list-book#completed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .book,
+  .button {
+    display: block;
+  }
+
+  .list-book {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .list-book#uncompleted {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    grid-column: span 4;
+  }
+  .list-book#uncompleted {
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .input_section,
+  .book_shelf,
+  .search_section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: 0.2s;
+  }
+
+  /* .card {
+    grid-column: span 4;
+  } */
+
+  .list-book {
+    display: block;
+  }
+  .list-book#uncompleted {
+    display: block;
+  }
+
+  .book,
+  .button {
+    display: block;
+  }
+
+  /* .completed-button,
+  .edit-button,
+  .trash-button,
+  .uncompleted-button {
+    margin: 5px;
+  } */
+}

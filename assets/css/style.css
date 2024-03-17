@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+:root {
+  --blue: #378ce7;
+  --secondaryBlue: #dff5ff;
+  --white: #f0f0f0;
+  --black: #343a40;
+  --dark: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* ============================== */
+/* General Class */
+.container {
+  min-width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ============================== */
+/* Body */
+header {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.logo {
+  width: 50px;
+}
+
+.input_section {
+  padding: 1rem;
+  padding-top: 3rem;
+  transition: 0.2s;
+}
+
+.book_shelf,
+.search_section {
+  padding: 1rem;
+  transition: 0.2s;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+}
+
+.card {
+  color: var(--blue);
+  width: 100%;
+  grid-column: span 2;
+  padding: 5px;
+  position: relative;
+  border: 1px solid var(--secondaryBlue);
+  border-radius: 10px;
+  background-color: var(--secondaryBlue);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card h2 {
+  margin-top: 20px;
+}
+
+.form-group {
+  height: 50px;
+  margin: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.title {
+  height: 20px;
+  width: 30%;
+  background: var(--secondaryBlue);
+  border-radius: 10px;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  transform: translateY(8px);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.placeholder {
+  color: var(--blue);
+  line-height: 14px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform-origin: 0 50%;
+  transition: 0.2s;
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+  color: var(--secondaryBlue);
+  background: var(--blue);
+  font-size: large;
+  padding: 4px 20px 0;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.input ~ .placeholder {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.input:focus ~ .placeholder {
+  color: var(--blue);
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.form {
+  display: grid;
+}
+
+.btn-submit {
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background: var(--blue);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: var(--blue);
+}
+.btn-submit:active {
+  background: var(--blue);
+}
+
+.book {
+  display: flex;
+  background: var(--blue);
+  margin: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.book-image {
+  flex-basis: 40%;
+}
+
+.button {
+  flex-basis: 10%;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.book-desc {
+  font-size: 14px;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.book-desc h3 {
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.book-desc h3,
+.book-desc p {
+  padding: 10px 5px;
+  text-align: left;
+  font-size: large;
+  color: var(--white);
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 10px;
+}
+
+.completed-button,
+.uncompleted-button,
+.edit-button,
+.trash-button {
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.completed-button {
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+.completed-button:hover {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+.uncompleted-button {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+.uncompleted-button:hover {
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+.edit-button {
+  color: var(--white);
+  background-color: green;
+}
+
+.edit-button:hover {
+  color: green;
+  background-color: white;
+}
+
+.trash-button {
+  color: var(--white);
+  background-color: red;
+}
+
+.trash-button:hover {
+  color: red;
+  background-color: white;
+}
+
+.search-box {
+  position: absolute;
+  display: inline-flex;
+  right: 0;
+  background: var(--secondaryBlue);
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.search-box:hover .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover .search-btn {
+  background: var(--blue);
+  color: white;
+}
+
+.search-btn {
+  color: var(--white);
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: var(--blue);
+  font-size: 16px;
+  transition: 0.5s;
+  line-height: 30px;
+  width: 0px;
+}
