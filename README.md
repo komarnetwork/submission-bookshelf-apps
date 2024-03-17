@@ -47,10 +47,10 @@ Local storage key : BOOKSHELF-APP, dan Value
 
 ```json
  {
-  id: 1710574439520,
-  title: "buku sejarah",
-  author: "joko",
-  year: "2010",
-  isComplete: false
+  "id": 1710574439520,
+  "title": "buku sejarah",
+  "author": "joko",
+  "year": "2010",
+  "isComplete": false
 }
 ```
