@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 :root {
   --blue: #378ce7;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* ============================== */
@@ -120,13 +120,14 @@ header {
   height: 100%;
   width: 100%;
   color: var(--secondaryBlue);
-  background: var(--blue);
+  background-color: var(--blue);
   font-size: large;
   padding: 4px 20px 0;
   border: 0;
   border-radius: 10px;
   outline: 0;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 

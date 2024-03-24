@@ -1,4 +1,5 @@
 # 📚 DBS Foundation Coding Camp
+
 Setelah sukses memberikan lebih dari 52.000 beasiswa coding kepada talenta digital Indonesia pada tahun 2023, pada tahun 2024 ini, DBS Foundation Coding Camp akan kembali memberikan puluhan ribu beasiswa pelatihan coding online dalam alur belajar Front-End Web Developer dan Machine Learning Developer mulai dari level Dasar (Basic), Pemula (Beginner), Menengah (Intermediate), hingga Mahir (Expert).
 
 🗒️ [Sertifikat Kompetensi Kelas Belajar Membuat Front-End Web untuk Pemula.pdf](https://www.dicoding.com/certificates/JLX12OKD6Z72) [^1]
@@ -30,8 +31,8 @@ Evaluasi pembelajaran:
 
 Total jam yang dibutuhkan untuk menyelesaikan kelas ini, mulai dari persiapan kelas sampai evaluasi belajar, adalah **45** jam.
 
-
 ## Submission Bookshelf APPS (DOM & Web Storage)
+
 Fitur Bookshelf APPS
 
 - **Styling CSS (no framework)**
@@ -46,7 +47,7 @@ Local storage key : BOOKSHELF-APP, dan Value
 - **Output** :
 
 ```json
- {
+{
   "id": 1710574439520,
   "title": "buku sejarah",
   "author": "joko",
